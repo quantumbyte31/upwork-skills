@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Upwork Bridge",
+  "version": "1.0.0",
+  "description": "Upwork Automation Bridge - connects local Python CLI to browser",
+  "permissions": [
+    "tabs",
+    "cookies",
+    "scripting",
+    "alarms",
+    "debugger"
+  ],
+  "host_permissions": [
+    "https://www.upwork.com/*",
+    "ws://localhost/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
